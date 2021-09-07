@@ -3,12 +3,15 @@ body {
     font-size: 17px;
     color: #161c2d;
 }
+a:hover {
+    text-decoration: none;
+}
 form input.form-control::placeholder {
     color:#869ab8;
 }
 .ms-form .form-control,
 .ms-form .btn-primary {
-    padding: 13px 20px;
+    padding: 13px 15px;
     height: auto;
     border: 1px solid #f1f4f8;
 }
@@ -41,17 +44,22 @@ form input.form-control::placeholder {
     padding-left:75px;
 }
 .ms-bg-image > div {
-    /* background: no-repeat 50%/cover; */
-    background-image: url('../images/img-side.jpg');
+    background-image: url('../images/000.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: 100% 20%;
     width: calc(100% + 50vw - 550px + 2.5rem);
     clip-path: polygon(4.5% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.ms-bg-vector > div {
+    background-image: url('../images/side_vector.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 @media (max-width:1200px) {
     .ms-bg-image > div {
         width: calc(100% + 60vw - 550px + 2.5rem);
+        background-position: 40% 20%;
     }
     .ms-bg-image {
         padding-left: 30px;
