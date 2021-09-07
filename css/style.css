@@ -53,6 +53,7 @@ form input.form-control::placeholder {
 }
 .ms-bg-vector > div {
     background-image: url('../images/side_vector.svg');
+    /* width: calc(100% + 50vw - 550px + 2.5rem); */
     background-repeat: no-repeat;
     background-position: center;
 }
