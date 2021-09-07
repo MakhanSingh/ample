@@ -42,12 +42,12 @@ form input.form-control::placeholder {
 }
 .ms-bg-image > div {
     /* background: no-repeat 50%/cover; */
-    background-image: url('../images/login-bg.jpg');
+    background-image: url('../images/img-side.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     width: calc(100% + 50vw - 550px + 2.5rem);
-    clip-path: polygon(3.5% 0%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(4.5% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 @media (max-width:1200px) {
     .ms-bg-image > div {
