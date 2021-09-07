@@ -1,0 +1,64 @@
+body {
+    font-family: 'HK Grotesk Pro';
+    font-size: 17px;
+    color: #161c2d;
+}
+form input.form-control::placeholder {
+    color:#869ab8;
+}
+.ms-form .form-control,
+.ms-form .btn-primary {
+    padding: 13px 20px;
+    height: auto;
+    border: 1px solid #f1f4f8;
+}
+.ms-form .form-control:focus {
+    background-color: #fff;
+    border-color: #335eea;
+    box-shadow: none;
+}
+.ms-form label {
+    font-weight: 500;
+}
+.ms-btn {
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.ms-btn:focus {
+    box-shadow: none;
+}
+.ms-text-muted {
+    color:#869ab8;
+}
+.ms-overflow-x {
+    overflow-x: hidden;
+}
+.ms-login-section > .container > .row {
+    height: 100vh;
+}
+.ms-bg-image {
+    padding-left:75px;
+}
+.ms-bg-image > div {
+    /* background: no-repeat 50%/cover; */
+    background-image: url('../images/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: calc(100% + 50vw - 550px + 2.5rem);
+    clip-path: polygon(3.5% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+@media (max-width:1200px) {
+    .ms-bg-image > div {
+        width: calc(100% + 60vw - 550px + 2.5rem);
+    }
+    .ms-bg-image {
+        padding-left: 30px;
+    }
+}
+@media (max-width:600px) {
+    h1 {
+        font-size: 32px;
+    }
+}
