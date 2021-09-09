@@ -116,8 +116,13 @@ form input.form-control::placeholder {
     background-position: 100% 80%;
 }
 .ms-page-four .ms-bg-image {
-    background-image: url('../images/003302.jpg');
-    background-position: center;
+    /* background-image: url('../images/top_img_form.svg'), url('../images/side_img_form.svg');
+    background-position: center top, center; */
+    background-image: url('../images/side_vector_img.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #c7ddfa;
+    background-size: 80%;
 }
 .ms-page-four .ms-content-area {
     padding-left: 7%;
@@ -147,6 +152,10 @@ form input.form-control::placeholder {
     .ms-seperator span:before,
     .ms-seperator span:after {
         width: 30%;
+    }
+    .ms-page-four .ms-bg-image {
+        background-position: center;
+        background-size: 90%;
     }
 }
 @media (max-width:990px) {
