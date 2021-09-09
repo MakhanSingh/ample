@@ -43,17 +43,16 @@ form input.form-control::placeholder {
 .ms-bg-image {
     padding-left:75px;
 }
-.ms-bg-image > div {
-    background-image: url('../images/000.jpg');
+.ms-bg-image > div {    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 20%;
     width: calc(100% + 50vw - 550px + 2.5rem);
+}
+.ms-bg-image.ms-clip-img > div { 
     clip-path: polygon(4.5% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 .ms-bg-vector > div {
-    background-image: url('../images/side_vector.svg');
-    /* width: calc(100% + 50vw - 550px + 2.5rem); */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -69,5 +68,113 @@ form input.form-control::placeholder {
 @media (max-width:600px) {
     h1 {
         font-size: 32px;
+    }
+}
+
+/*----- Layout Three & Four CSS -----*/
+.ms-google-btn {
+    border:1px solid #e1e1e1;
+    border-radius: 3px;
+    padding: 11px;
+    font-size: 16px;
+    color:#333;
+    font-weight: 600;
+}
+.ms-google-btn:hover {
+    color:#333;
+    background: #f6f6f6;
+}
+.ms-seperator {
+    font-size: 14px;
+    color:#869ab8;
+}
+.ms-seperator span:before,
+.ms-seperator span:after {
+    background: #c1d9f8;
+    width: 32%;
+    height: 1px;
+    position: absolute;
+    top: 11px;
+    content: '';
+}
+.ms-seperator span:before {
+    left:0;
+}
+.ms-seperator span:after {
+    right:0;
+}
+.ms-page-three .row, 
+.ms-page-four .container-fluid > .row {
+    height:100vh;
+}
+.ms-page-three .ms-content-area {
+    padding-left:20%;
+    padding-right: 7%;
+}
+.ms-page-three .ms-bg-image {
+    background-image: url('../images/00002.jpg');
+    background-position: 100% 80%;
+}
+.ms-page-four .ms-bg-image {
+    background-image: url('../images/003302.jpg');
+    background-position: center;
+}
+.ms-page-four .ms-content-area {
+    padding-left: 7%;
+    padding-right: 20%;
+}
+.ms-page-four .ms-form .form-control, .ms-form .btn-primary {
+    border: 1px solid #ced4da;
+}
+.ms-page-four .ms-google-btn {
+    border: 1px solid #ced4da;
+    background:#fff;
+}
+@media (max-width:1500px) {
+    .ms-page-three .ms-content-area {
+        padding-left:10%;
+        padding-right: 8%;
+    }
+    .ms-page-four .ms-content-area {
+        padding-right: 7%;
+    }
+}
+@media (max-width:1100px) {
+    .ms-page-three .ms-content-area {
+        padding-left:7%;
+        padding-right: 7%;
+    }
+    .ms-seperator span:before,
+    .ms-seperator span:after {
+        width: 30%;
+    }
+}
+@media (max-width:990px) {
+    .ms-seperator span:before,
+    .ms-seperator span:after {
+        width: 37%;
+    }
+}
+@media (max-width:550px) {
+    .ms-seperator span:before,
+    .ms-seperator span:after {
+        width: 28%;
+    }
+    .ms-page-three .ms-content-area, 
+    .ms-page-four .ms-content-area {
+        padding-left:4%;
+        padding-right: 4%;
+    }
+}
+@media (max-width:400px) {
+    .ms-seperator span:before,
+    .ms-seperator span:after {
+        width: 26%;
+    }
+}
+@media (max-width:350px) {
+    .ms-seperator span:before,
+    .ms-seperator span:after {
+        width: 24%;
     }
 }
