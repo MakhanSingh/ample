@@ -1,0 +1,5 @@
+@media (max-width:992px) {
+    .popover, .dropdown-menu {
+        top:260px !important;
+    }
+}
